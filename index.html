@@ -21,6 +21,7 @@
             <button id="searchBTN" class="btn btn-outline">Search</button>
         </div>
     </header>
+
     <div id="notFound" class="alert alert-warning shadow-lg my-6 w-1/4 ml-20 hidden">
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none"
@@ -32,9 +33,25 @@
         </div>
     </div>
     <progress id="loader" class="progress hidden"></progress>
+
+    <div>
+        <!-- Put this part before </body> tag -->
+        <input type="checkbox" id="my-modal-4" class="modal-toggle" />
+        <label for="my-modal-4" class="modal cursor-pointer">
+            <label class="modal-box relative" for="">
+                <h1 class="text-2xl font-bold">Brand: <span id="phoneTitle"></span></h1>
+                <p class="text-lg font-semibold">Strorage: <span class="text-sm font-light" id="storage"></span></p>
+                <p class="text-lg font-semibold">Display: <span class="text-sm font-light" id="display"></span></p>
+                <p class="text-lg font-semibold">Chipset: <span class="text-sm font-light" id="chipset"></span></p>
+                <p class="text-lg font-semibold">Memory: <span class="text-sm font-light" id="memory"></span></p>
+                <p class="text-lg font-semibold">Sensor: <span class="text-sm font-light" id="sensor"></span></p>
+            </label>
+        </label>
+    </div>
+
     <main class="w-4/5 mx-auto my-10">
         <div class="flex justify-end">
-            <button class="btn btn-ghost hidden">Button</button>
+            <button id="show-all" class=" my-5 btn btn-ghost hidden">Show all</button>
         </div>
         <div id="cards-container" class="grid grid-cols-3 gap-6">
             <!-- dynamic cards here -->
